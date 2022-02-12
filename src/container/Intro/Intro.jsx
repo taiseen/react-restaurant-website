@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
-import meal from '../../assets/meal.mp4';
+import { meal } from '../../constants';
 import './Intro.css';
 
 const Intro = () => {
