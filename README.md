@@ -10,6 +10,5 @@ Inspire & Learn from this [link](https://youtu.be/4oV65GVVits)
 - import image in one file 
 
 ## Package Install:-
+- npm install
 - npm install react-icons
-
-

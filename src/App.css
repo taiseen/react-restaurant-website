@@ -20,8 +20,7 @@
   display        : flex;
   justify-content: space-between;
   align-items    : center;
-
-  min-height: 100vh;
+  min-height     : 100vh;
 }
 
 .app__wrapper_info {
@@ -39,8 +38,7 @@
   display        : flex;
   justify-content: center;
   align-items    : center;
-
-  margin-left: 2rem;
+  margin-left    : 2rem;
 }
 
 .app__wrapper_img-reverse {
@@ -101,26 +99,44 @@
   width: 45px;
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (max-width: 2000px) {
 
   .custom__button,
   .p__cormorant {
-    font-size  : 37px;
-    line-height: 67px;
-  }
-
-  .p__opensans {
-    font-size  : 30px;
+    font-size  : 32px;
     line-height: 50px;
   }
 
-  .headtext__cormorant {
+  .p__opensans {
+    font-size  : 25px;
+    line-height: 40px;
+  }
+
+  .app__wrapper_img img {
+    width: 70%;
+  }
+
+  /* .headtext__cormorant {
     font-size  : 150px;
     line-height: 210px;
+  } */
+  .app__header-h1 {
+    letter-spacing: .4rem;
+    line-height   : 100px;
   }
 
   .spoon__img {
-    width: 80px;
+    width      : 70px;
+    margin-left: 15px;
+  }
+
+  .app__aboutus-content-knife img {
+    height: 1110px;
+  }
+
+  .app__aboutus-content_about .p__opensans,
+  .app__aboutus-content_history .p__opensans {
+    margin: 3rem 0;
   }
 }
 
@@ -140,12 +156,29 @@
   .app__wrapper_img img {
     width: 100%;
   }
+
+  .app__specialMenu-menu {
+    flex-direction: column;
+  }
+
+  .app__menuItem-sub {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 850px) {
   .section__padding {
     padding: 4rem;
   }
+
+  .app__aboutus-content {
+    flex-direction: column;
+  }
+
+  .app__aboutus-content-knife {
+    margin: 4rem 0;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -160,19 +193,61 @@
   .p__opensans {
     font-size: 14px;
   }
+
+  .app__aboutus-overlay img {
+    width : 80%;
+    height: 320px;
+  }
+
+  .app__specialMenu-menu_img {
+    width: 100%;
+  }
+
+  .app__specialMenu-menu_heading {
+    font-size  : 35px;
+    line-height: 48px;
+  }
+
+  .app__specialMenu-menu_img {
+    margin: 3rem 0;
+  }
+
+  .app__specialMenu .spoon__img {
+    display: block;
+    margin : 10px auto 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .p__opensans {
-    font-size: 12px;
+    font-size  : 12px;
+    line-height: 1.5rem !important;
   }
 
   .p__cormorant {
-    font-size: 19px;
+    font-size    : 19px;
+    /* text-align: center; */
   }
 
   .headtext__cormorant {
     font-size  : 45px;
     line-height: 70px;
   }
+
+  .app__header-h1 {
+    /* text-align : center; */
+    font-size  : 4rem;
+    line-height: 5rem;
+  }
+
+  .app__aboutus-content_about .p__opensans,
+  .app__aboutus-content_history .p__opensans {
+    margin: 1rem 0;
+  }
+
+  .custom__button {
+    font-size  : 30px;
+    line-height: 35px;
+  }
+
 }
