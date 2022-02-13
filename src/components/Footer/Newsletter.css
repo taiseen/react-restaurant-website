@@ -4,3 +4,66 @@
     border          : 1px solid var(--color-golden);
     background-color: var(--color-black);
 }
+
+.app__newsletter-heading {
+    text-align: center;
+}
+
+.app__newsletter-input {
+    font-display: row;
+    margin-top  : 3rem;
+}
+
+.app__newsletter-input input {
+    width           : 620px;
+    border          : 1px solid var(--color-golden);
+    border-radius   : 5px;
+    font-size       : 1.5rem;
+    color           : var(--color-golden);
+    background-color: var(--color-black);
+    font-family     : var(--font-base);
+    margin-right    : 2rem;
+    padding         : .8em 1rem;
+    outline         : none;
+}
+
+.app__newsletter-input button {
+    width: max-content;
+}
+
+
+@media screen and (min-width: 2000px) {
+    .app__newsletter-input button {
+        font-size: 2rem;
+        padding  : 1.2rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .app__newsletter-input {
+        width         : 100%;
+        flex-direction: column;
+    }
+
+    .app__newsletter-input input {
+        margin: 0 0 2rem 0;
+        width : 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .app__newsletter {
+        padding: 2rem 0;
+        border : none;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .app__newsletter-heading h1 {
+        font-size  : 32px;
+        line-height: 50px;
+    }
+}
