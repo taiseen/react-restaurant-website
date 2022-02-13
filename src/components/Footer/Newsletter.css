@@ -1,0 +1,6 @@
+.app__newsletter {
+    z-index         : 200;
+    padding         : 2rem 4rem;
+    border          : 1px solid var(--color-golden);
+    background-color: var(--color-black);
+}
